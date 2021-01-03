@@ -1,0 +1,32 @@
+:root {
+	--text-color: #008000;
+    --background-color: #cfc;
+    --border-color: #9c9;
+    --label-background: #fff;
+}
+
+.wp-block-dcwd-blocks-comment {
+	color: var(--text-color);
+	background: var(--background-color);
+	border: 2px solid var(--border-color);
+	padding: 20px;
+}
+
+.wp-block-dcwd-blocks-comment:before {
+    content: 'comment';
+    padding: 0.3em 0.6em;
+    font-size: 0.8rem;
+    position: absolute;
+    background-color: var(--border-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    top: 0;
+    right: 0;
+    left: initial !important;
+    background-color: var(--label-background);
+    transition: all 0.2s;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 5;
+    font-weight: 400;
+}
